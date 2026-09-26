@@ -1,5 +1,4 @@
 # ------------------------------------------------------------
-# D3M Assignment - GreenGrid Energy Optimization Model
 # This script builds and solves MILP models for different datasets
 # using HiGHS and GLPK solvers.
 # ------------------------------------------------------------

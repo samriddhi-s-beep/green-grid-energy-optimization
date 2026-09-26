@@ -10,13 +10,13 @@ library(ROI.plugin.glpk)
 library(ROI.plugin.highs)
 
 # START LOGGING: using sink() function to get solver message in text file
-sink("40529135_solverlogs.txt")
+sink("GGDS_solverlogs.txt")
 
 ############################################################
 # FUNCTION: SOLVE MODEL
 GGE_model <- function(file_path) {
 
-# Each row corresponds to a different parameter (as per assignment structure)
+# Each row corresponds to a different parameter
   
   ############################################################
   # READ DATA
@@ -268,9 +268,9 @@ GGE_model <- function(file_path) {
 
 # RUN DATASETS
 
-small_dataset  <- GGE_model("40529135_small.csv")
-medium_dataset <- GGE_model("40529135_medium.csv")
-large_dataset  <- GGE_model("40529135_large.csv")
+small_dataset  <- GGE_model("GGDS_small.csv")
+medium_dataset <- GGE_model("GGDS_medium.csv")
+large_dataset  <- GGE_model("GGDS_large.csv")
 
 sink()
 
